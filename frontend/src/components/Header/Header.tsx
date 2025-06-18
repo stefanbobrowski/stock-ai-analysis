@@ -5,7 +5,7 @@ import styles from './Header.module.scss';
 const Header = () => {
   return (
     <header className={styles.header}>
-      <h1 className={styles.title}>Stock AI Analysis</h1>
+      <h1 className={styles.title}>Stock AI Analyzer</h1>
       <ThemeToggle />
       <Navbar />
     </header>

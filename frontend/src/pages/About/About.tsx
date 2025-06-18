@@ -2,7 +2,7 @@ const About = () => {
   return (
     <main className="about">
       <h2>About</h2>
-      <h3>stock-ai-analysis</h3>
+      <h3>vite-react-ts-starter</h3>
       <p>
         🧑‍💻 Created by:{' '}
         <a href="https://github.com/stefanbobrowski" target="_blank" rel="noopener noreferrer">
@@ -12,11 +12,11 @@ const About = () => {
       <p>
         🧷 GitHub Code:{' '}
         <a
-          href="https://github.com/stefanbobrowski/sotck-ai-analysis"
+          href="https://github.com/stefanbobrowski/vite-react-ts-starter"
           target="_blank"
           rel="noopener noreferrer"
         >
-          stock-ai-analysis
+          vite-react-ts-starter
         </a>
       </p>
     </main>
