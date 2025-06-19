@@ -12,6 +12,8 @@ const __dirname = path.dirname(__filename);
 // Serve the frontend build
 app.use(express.static(path.join(__dirname, '../frontend/dist')));
 
+app.use(require('./routes/getStockPrice'));
+
 // Fallback route for React Router
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
