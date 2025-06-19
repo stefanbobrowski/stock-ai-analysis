@@ -1,7 +1,8 @@
-const express = require('express');
-const { BigQuery } = require('@google-cloud/bigquery');
-const router = express.Router();
+// backend/routes/getStockPrice.js
+import express from 'express';
+import { BigQuery } from '@google-cloud/bigquery';
 
+const router = express.Router();
 const bigquery = new BigQuery();
 
 router.get('/api/stock-price', async (req, res) => {
@@ -21,11 +22,11 @@ router.get('/api/stock-price', async (req, res) => {
     `;
 
     const [rows] = await bigquery.query({ query });
-    res.json(rows[0]); // return just the latest row
+    res.json(rows[0]);
   } catch (err) {
     console.error('BigQuery error:', err);
     res.status(500).json({ error: 'Failed to fetch stock data' });
   }
 });
 
-module.exports = router;
+export default router;
