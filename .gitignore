@@ -142,7 +142,6 @@ docker-compose.override.yml
 
 # Cloud Run build artifacts
 .gcloudignore
-Dockerfile
 
 # Firebase or GCP serverless artifacts (if any)
 .firebase/
